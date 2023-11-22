@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiro ao Áudio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Tiro ao Áudio</h2>
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link"><i class="fas fa-home"></i> Home</a>
+                </li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1 class="titulo-musicas">O que você deseja escutar?</h1>
+            <ul class="music-list">
+                <i  ><div class="music-list-item "id="musicList"> </div> </i>
+            </ul>
+        </div>
+        <div class="music-player">
+            <audio id="audioPlayer" controls>
+                
+            </audio>
+         
+            <button id="backButton" class="round-button" ><i class="fas fa-backward"></i></button>
+            <button id="forwardButton" class="round-button"><i class="fas fa-forward"></i></button>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
