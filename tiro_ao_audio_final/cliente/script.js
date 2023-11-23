@@ -57,5 +57,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    playPauseButton.addEventListener('click', () => {
+        if (audioPlayer.paused) {
+            audioPlayer.play();
+            playPauseButton.textContent = 'Pause';
+        } else {
+            audioPlayer.pause();
+            playPauseButton.textContent = 'Play';
+        }
+    })
+
     getMusicList();
 });
